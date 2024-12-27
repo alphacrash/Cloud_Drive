@@ -114,7 +114,6 @@ const AuthForm = ({ type }: { type: FormType }) => {
               </FormItem>
             )}
           />
-
           <Button
             type="submit"
             className="form-submit-button"
@@ -132,9 +131,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
               />
             )}
           </Button>
-
           {errorMessage && <p className="error-message">*{errorMessage}</p>}
-
           <div className="body-2 flex justify-center">
             <p className="text-light-100">
               {type === "sign-in"
